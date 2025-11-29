@@ -14,7 +14,7 @@ export default function AboutHome() {
         <div className="app-container flex flex-col gap-12 py-10 lg:flex-row lg:items-center lg:justify-between">
           {/* LEFT CONTENT */}
           <div className="w-full">
-            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-[50px]">
               Hi, we’re Creatio
             </h1>
 

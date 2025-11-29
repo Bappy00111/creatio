@@ -10,7 +10,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full ">
       <div className="app-container lg:pt-14 lg:pb-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo + mobile menu button */}

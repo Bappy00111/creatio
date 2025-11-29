@@ -24,7 +24,7 @@ const TEAM_MEMBERS = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-white py-16">
+    <section className=" py-16">
       <div className="app-container">
         {/* Heading */}
         <header className="text-center">

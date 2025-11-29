@@ -79,7 +79,7 @@ const SERVICES = [
 
 export function WhatWeDoSection() {
   return (
-    <section className="bg-white py-16">
+    <section className="py-16">
       <div className="app-container">
         {/* Heading */}
         <h2 className="text-center text-3xl font-semibold tracking-tight text-[#212121] sm:text-[40px]">
