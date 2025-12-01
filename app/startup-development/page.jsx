@@ -87,27 +87,27 @@ const appProjects = [
   },
 ];
 
-export default function AppDevelopment() {
+export default function StartupDevelopment() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "Startup development" },
+    { id: 2, label: "MVP development" },
+    { id: 3, label: "Apps for startups" },
+    { id: 4, label: "Startup consulting" },
+    { id: 5, label: "Websites for startups" },
+    { id: 6, label: "Brand & logo design" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "We Help Startupss",
     heroDescription:
-      "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
+      "Creatio has worked with dozens of startups, building their ideas into reality. From building a MVP to launch and growth, we help startups get started.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/static/images/img/work-startup.svg",
     rightImageAlt: "Team working at computers",
-    servicesTitle: "App development services",
+    servicesTitle: "Startup development services",
     services: servicesData,
   };
 

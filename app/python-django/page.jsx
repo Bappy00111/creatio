@@ -87,20 +87,20 @@ const appProjects = [
   },
 ];
 
-export default function AppDevelopment() {
+export default function pythonDjango() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "Web development" },
+    { id: 2, label: "Django app support" },
+    { id: 3, label: "Web applications" },
+    { id: 4, label: "Django Rest Framework" },
+    { id: 5, label: "Django + security" },
+    { id: 6, label: "CMS development" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "Python Django Development",
     heroDescription:
       "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
     buttonLabel: "Request a quote",
@@ -144,7 +144,7 @@ export default function AppDevelopment() {
 
 
   const appProjectsConfig = {
-    title: "App development projects",
+    title: "Python Django projects",
     projects: appProjects,
     seeMoreHref: "/projects",
     seeMoreLabel: "See more projects",

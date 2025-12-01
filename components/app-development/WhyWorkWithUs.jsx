@@ -6,7 +6,7 @@ import Image from "next/image";
 import { MdArrowForwardIos } from "react-icons/md";
 
 
-export default function WhyWorkWithUs() {
+export default function WhyWorkWithUs({ title, items }) {
   // data/whyWorkWithUs.ts
   const whyWorkWithUs = [
     {
@@ -40,8 +40,6 @@ export default function WhyWorkWithUs() {
 
   return (
     <section className="relative isolate overflow-hidden py-20">
-
-
       <div className="relative app-container">
         <h2 className="text-center text-4xl font-semibold tracking-wide text-[#212121] sm:text-[40px]">
           Why work with us

@@ -87,27 +87,27 @@ const appProjects = [
   },
 ];
 
-export default function AppDevelopment() {
+export default function BrandIdentityDesign() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "Custom logo design" },
+    { id: 2, label: "Brand identity design" },
+    { id: 3, label: "Graphics & illustration" },
+    { id: 4, label: "Style & brand guides" },
+    { id: 5, label: "Business cards" },
+    { id: 6, label: "Stationary design" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "Brand Designers",
     heroDescription:
-      "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
+      "We design custom logos and brand identity for companies just starting out or in need of a refresh. From style-guides to stationary and more.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/static/images/img/work-branding.svg",
     rightImageAlt: "Team working at computers",
-    servicesTitle: "App development services",
+    servicesTitle: "Brand design services",
     services: servicesData,
   };
 
@@ -144,7 +144,7 @@ export default function AppDevelopment() {
 
 
   const appProjectsConfig = {
-    title: "App development projects",
+    title: "Startup development projects",
     projects: appProjects,
     seeMoreHref: "/projects",
     seeMoreLabel: "See more projects",

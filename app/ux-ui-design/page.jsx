@@ -87,27 +87,27 @@ const appProjects = [
   },
 ];
 
-export default function AppDevelopment() {
+export default function UxUiDesign() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "User experience design" },
+    { id: 2, label: "User interface design" },
+    { id: 3, label: "Wireframes & mockups" },
+    { id: 4, label: "Lo & hi-fi prototyping" },
+    { id: 5, label: "Mobile friendly design" },
+    { id: 6, label: "Website accessibility" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "UX / UI Designers",
     heroDescription:
-      "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
+      "We provide User Experience & User Interface design for all of our projects, or as a standalone service. This includes wireframes, prototypes and more.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/static/images/img/work-ui-ux.svg",
     rightImageAlt: "Team working at computers",
-    servicesTitle: "App development services",
+    servicesTitle: "UX & UI design services",
     services: servicesData,
   };
 
@@ -144,7 +144,7 @@ export default function AppDevelopment() {
 
 
   const appProjectsConfig = {
-    title: "App development projects",
+    title: "UX / UI design projects",
     projects: appProjects,
     seeMoreHref: "/projects",
     seeMoreLabel: "See more projects",

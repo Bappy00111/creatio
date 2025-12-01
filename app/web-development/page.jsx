@@ -90,24 +90,24 @@ const appProjects = [
 export default function AppDevelopment() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "Website development" },
+    { id: 2, label: "Website design" },
+    { id: 3, label: "Web applications" },
+    { id: 4, label: "Responsive websites" },
+    { id: 5, label: "Online stores" },
+    { id: 6, label: "Website UX & UI" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "Web Developers",
     heroDescription:
-      "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
+      "We design and develop websites and scalable web applications using modern frameworks & technologies. From startups and online stores to social networks.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/static/images/img/work-websites.svg",
     rightImageAlt: "Team working at computers",
-    servicesTitle: "App development services",
+    servicesTitle: "Web development services",
     services: servicesData,
   };
 
@@ -144,7 +144,7 @@ export default function AppDevelopment() {
 
 
   const appProjectsConfig = {
-    title: "App development projects",
+    title: "Web development projects",
     projects: appProjects,
     seeMoreHref: "/projects",
     seeMoreLabel: "See more projects",

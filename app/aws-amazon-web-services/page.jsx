@@ -28,6 +28,7 @@ import projectImageSix from "../../public/app-development/image-six.jpeg";
 import projectImgeSeven from "../../public/app-development/image-seven.jpeg";
 import projectImgeEight from "../../public/app-development/image-eight.jpeg";
 import projectImgeNine from "../../public/app-development/image-nine.jpeg";
+import DevelopmentHome from "@/components/app-development/DevelopmentHome";
 
 
 const appProjects = [
@@ -87,27 +88,27 @@ const appProjects = [
   },
 ];
 
-export default function AppDevelopment() {
+export default function AwsAmazonWebServices() {
   // data/appDevelopmentServices.ts\
   const servicesData = [
-    { id: 1, label: "iPhone apps" },
-    { id: 2, label: "Android apps" },
-    { id: 3, label: "iPad apps" },
-    { id: 4, label: "Swift and SwiftUI" },
-    { id: 5, label: "Kotlin development" },
-    { id: 6, label: "Progressive web apps" },
+    { id: 1, label: "Scalable architecture" },
+    { id: 2, label: "Serverless applications" },
+    { id: 3, label: "Security & monitoring" },
+    { id: 4, label: "Automated CI/CD" },
+    { id: 5, label: "Startup friendly" },
+    { id: 6, label: "Global infrastructure" },
   ];
 
 
   const appDevConfig = {
-    heroTitle: "App Developers",
+    heroTitle: "AWS Developers",
     heroDescription:
-      "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
+      "We have a wealth of knowledge and experience hosting and maintaining cloud native solutions on Amazon Web Services (AWS). Tailored to meet your needs, we draw on our 14 years of experience working with AWS to build secure and scalable solutions following industry standards and best practices.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/static/images/img/AWS.svg",
     rightImageAlt: "Team working at computers",
-    servicesTitle: "App development services",
+    servicesTitle: "Why we build on AWS",
     services: servicesData,
   };
 
@@ -144,7 +145,7 @@ export default function AppDevelopment() {
 
 
   const appProjectsConfig = {
-    title: "App development projects",
+    title: "Recent projects built on AWS",
     projects: appProjects,
     seeMoreHref: "/projects",
     seeMoreLabel: "See more projects",
@@ -164,7 +165,7 @@ export default function AppDevelopment() {
 
   return (
     <>
-      <AppDevelopmentHome {...appDevConfig} />
+      <DevelopmentHome {...appDevConfig} />
       <WhyWorkWithUs
         title="Why work with us"
         items={whyWorkWithUsData} />
