@@ -1,13 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);        // mobile full menu
+  const [menuOpen, setMenuOpen] = useState(false); // mobile full menu
   const [servicesOpen, setServicesOpen] = useState(false); // mobile services accordion
+  const [scrolled, setScrolled] = useState(false); // scroll state
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -15,10 +29,22 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-white">
+    <header
+      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/95 shadow-sm" : "bg-white"
+      }`}
+    >
       {/* ========= TOP BAR (COMMON) ========= */}
-      <div className="app-container lg:pt-14 lg:pb-4 ">
-        <div className="flex items-center justify-between py-4">
+      <div
+        className={`app-container transition-all duration-300 ${
+          scrolled ? "lg:pt-3 lg:pb-2" : "lg:pt-14 lg:pb-4"
+        }`}
+      >
+        <div
+          className={`flex items-center justify-between transition-all duration-300 ${
+            scrolled ? "py-2" : "py-4"
+          }`}
+        >
           {/* logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -222,7 +248,6 @@ export default function Navbar() {
               type="button"
               onClick={closeMenu}
               aria-label="Close navigation"
-              className=""
             >
               <IoMdClose className="h-6 lg:h-14 w-6 lg:w-14 text-slate-900" />
             </button>
@@ -262,11 +287,7 @@ export default function Navbar() {
                   className={`
                     mt-2 space-y-2 overflow-hidden text-sm
                     transition-all duration-200 ease-out
-                    ${
-                      servicesOpen
-                        ? "max-h-[700px] opacity-100"
-                        : "max-h-0 opacity-0"
-                    }
+                    ${servicesOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"}
                   `}
                 >
                   <li>
