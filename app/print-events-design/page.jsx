@@ -105,7 +105,7 @@ export default function PrintEventsDesign() {
       "We have been developing websites, web apps, and backend systems using Python and the Django web framework for over 12 years. Get in touch with us to if you require Django development or support with existing Django applications.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/media/PythonDJ.svg",
+      "https://www.creatio.com.au/static/images/img/Even_Illustration.svg",
     rightImageAlt: "Team working at computers",
     servicesTitle: "Python Django development",
     services: servicesData,

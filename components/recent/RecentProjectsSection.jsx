@@ -46,11 +46,11 @@ export default function RecentProjectsSection() {
       <div className="relative app-container flex h-full flex-col gap-10 py:py-10 xl:py-20 md:flex-row md:items-center">
         {/* LEFT CONTENT */}
         <div className="md:w-5/12 text-center md:text-left">
-          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-[40px]">
             Recent projects
           </h2>
 
-          <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
+          <p className="mt-4 text-sm leading-relaxed font-normal text-slate-600 md:text-base">
             We have designed, developed, and delivered projects for hundreds of
             clients, both large and small. Here&apos;s some we completed
             recently.

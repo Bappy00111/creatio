@@ -1,54 +1,65 @@
 // components/ServicesAndCTASection.jsx
 import Image from "next/image";
 import love from "../../public/home-image/love.svg";
+import Link from "next/link";
 
 const services = [
   {
     id: "app-development",
     title: "App Development",
     iconSrc: "https://www.creatio.com.au/media/app_XrWfQqL.svg",
+    link: "/app-development/",
   },
   {
     id: "web-development",
     title: "Web Development",
     iconSrc: "https://www.creatio.com.au/media/web-dev_U8j7UvJ.svg",
+    link: "/web-development/",
   },
   {
     id: "ux-ui-design",
     title: "UX / UI Design",
     iconSrc: "https://www.creatio.com.au/media/ui-design_VMSlQDu.svg",
+    link: "/ux-ui-design/",
   },
   {
     id: "brand-identity",
     title: "Brand & Identity",
     iconSrc: "https://www.creatio.com.au/media/branding_g7hS2Z5.svg",
+    link: "/brand-identity-design/",
   },
   {
     id: "startup-development",
     title: "Startup Development",
     iconSrc: "https://www.creatio.com.au/media/startup_PsD7U8p.svg",
+    link: "/startup-development/",
   },
   {
     id: "print-events",
     title: "Print & Events Design",
     iconSrc: "https://www.creatio.com.au/media/print.svg",
+    link: "/print-events-design/",
   },
   {
     id: "python-django",
     title: "Python / Django",
     iconSrc: "https://www.creatio.com.au/media/django-python-new.svg",
+    link: "/python-django/",
   },
   {
     id: "shopify-hydrogen",
     title: "Shopify / Hydrogen",
     iconSrc: "https://www.creatio.com.au/media/shopify-new.svg",
+    link: "/shopify-hydrogen/",
   },
   {
     id: "aws-development",
     title: "AWS Development",
     iconSrc: "https://www.creatio.com.au/media/aws-new.svg",
+    link: "/aws-amazon-web-services/",
   },
 ];
+
 
 const ctaButtons = [
   {
@@ -77,36 +88,37 @@ export default function ServicesAndCTASection() {
         {/* Services grid */}
         <div className="mt-12 grid gap-10 grid-cols-2 md:grid-cols-3">
           {services.map((service) => (
-            <div
-              key={service.id}
-              className="group flex flex-col items-center text-center cursor-pointer"
-            >
-              {/* image wrapper */}
-              <div className="relative h-28 w-28 md:h-32 md:w-32 lg:h-[200px] lg:w-[200px]">
-                {/* background love.svg */}
-                <Image
-                  src={love}
-                  alt="Service background"
-                  fill
-                  className="pointer-events-none object-contain"
-                />
+            <Link href={service.link} key={service.id} className="flex flex-col items-center text-center group" >
+              <div
 
-                {/* top icon image */}
-                <div className="absolute inset-0 flex items-center justify-center">
+              >
+                {/* image wrapper */}
+                <div className="relative h-28 w-28 md:h-32 md:w-32 lg:h-[200px] lg:w-[200px]">
+                  {/* background love.svg */}
                   <Image
-                    src={service.iconSrc}
-                    alt={service.title}
-                    width={150}
-                    height={150}
-                    className="object-contain transition-transform duration-300 ease-out group-hover:-translate-y-2"
+                    src={love}
+                    alt="Service background"
+                    fill
+                    className="pointer-events-none object-contain"
                   />
-                </div>
-              </div>
 
-              <p className="mt-4 text-sm md:text-base xl:text-[18px] font-normal text-slate-800 transition-colors duration-300 group-hover:text-[#0dbfef]">
-                {service.title}
-              </p>
-            </div>
+                  {/* top icon image */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Image
+                      src={service.iconSrc}
+                      alt={service.title}
+                      width={150}
+                      height={150}
+                      className="object-contain transition-transform duration-300 ease-out group-hover:-translate-y-2"
+                    />
+                  </div>
+                </div>
+
+                <p className="mt-4 text-sm md:text-base xl:text-[18px] font-normal text-slate-800 transition-colors duration-300 group-hover:text-[#0dbfef]">
+                  {service.title}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
 

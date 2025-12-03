@@ -105,7 +105,7 @@ export default function pythonDjango() {
       "Creatio have been building award winning mobile apps since the very first smartphones. We design & develop native apps for the iPhone, Android devices, iPad, iOS and macOS. Speak to us about your app project.",
     buttonLabel: "Request a quote",
     rightImageSrc:
-      "https://www.creatio.com.au/static/images/img/work-mobile-apps.svg",
+      "https://www.creatio.com.au/media/PythonDJ.svg",
     rightImageAlt: "Team working at computers",
     servicesTitle: "App development services",
     services: servicesData,

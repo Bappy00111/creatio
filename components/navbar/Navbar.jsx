@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { IoIosArrowDown, IoMdClose } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
+import { TfiClose } from "react-icons/tfi";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // mobile full menu
@@ -30,28 +31,25 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 shadow-sm" : "bg-white"
-      }`}
+      className={`w-full sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 shadow-sm" : "bg-white"
+        }`}
     >
       {/* ========= TOP BAR (COMMON) ========= */}
       <div
-        className={`app-container transition-all duration-300 ${
-          scrolled ? "lg:pt-3 lg:pb-2" : "lg:pt-14 lg:pb-4"
-        }`}
+        className={`app-container transition-all duration-300 ${scrolled ? "lg:pt-3 lg:pb-2" : "lg:pt-14 lg:pb-4"
+          }`}
       >
         <div
-          className={`flex items-center justify-between transition-all duration-300 ${
-            scrolled ? "py-2" : "py-4"
-          }`}
+          className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "py-2" : "py-4"
+            }`}
         >
           {/* logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="https://www.creatio.com.au/static/images/img/logo-black.svg"
               alt="creatio logo"
-              width={140}
-              height={32}
+              width={160}
+              height={45}
               className="h-8 w-auto"
               priority
             />
@@ -93,7 +91,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/app-development/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       App Development
                     </Link>
@@ -101,7 +99,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/web-development/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Web Development
                     </Link>
@@ -109,7 +107,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/ux-ui-design/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       UX / UI Design
                     </Link>
@@ -117,7 +115,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/brand-identity-design/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Brand &amp; Identity
                     </Link>
@@ -125,7 +123,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/startup-development/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Startup Development
                     </Link>
@@ -133,7 +131,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/print-events-design/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Print &amp; Events Design
                     </Link>
@@ -141,7 +139,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/python-django/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Python / Django
                     </Link>
@@ -149,7 +147,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/shopify-hydrogen/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       Shopify / Hydrogen
                     </Link>
@@ -157,7 +155,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/aws-amazon-web-services/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       AWS Development
                     </Link>
@@ -165,7 +163,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/our-services/"
-                      className="block px-4 text-sm lg:text-base text-slate-700 hover:bg-slate-50 hover:text-sky-600"
+                      className="block px-4 text-sm lg:text-base  hover:bg-slate-50 hover:text-sky-600"
                     >
                       + All Services
                     </Link>
@@ -226,8 +224,8 @@ export default function Navbar() {
       <div
         className={`
           fixed inset-0 z-50 bg-white/95 backdrop-blur
-          transition-opacity duration-200 ease-out
-          ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+
+          ${menuOpen ? "transition-all duration-600 ease-out" : "opacity-0 pointer-events-none"}
           md:hidden
         `}
       >
@@ -249,13 +247,13 @@ export default function Navbar() {
               onClick={closeMenu}
               aria-label="Close navigation"
             >
-              <IoMdClose className="h-6 lg:h-14 w-6 lg:w-14 text-slate-900" />
+              <TfiClose className="h-6 w-6 text-slate-900" />
             </button>
           </div>
 
           {/* menu items */}
-          <nav className="mt-6">
-            <ul className="flex flex-col gap-4">
+          <nav className="mt-10">
+            <ul className="flex flex-col gap-4 space-y-6 font-normal">
               <li>
                 <Link
                   href="/"
@@ -273,20 +271,25 @@ export default function Navbar() {
                   className="flex w-full items-center justify-between text-base font-normal"
                   onClick={() => setServicesOpen((prev) => !prev)}
                 >
-                  <span>Services</span>
+                  <span className={`${servicesOpen ? "text-[#0DBFEF] font-medium" : "font-normal"}`}>Services</span>
                   <span
-                    className={`transition-transform ${
-                      servicesOpen ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform ${servicesOpen ? "rotate-180" : ""
+                      }`}
                   >
-                    <IoIosArrowDown />
+                    <span
+                      className={`inline-flex  ${servicesOpen ? "bg-[#0DBFEF] rounded-full p-1 text-white" : ""
+                        }`}
+                    >
+                      <IoIosArrowDown className="h-4 w-4" />
+                    </span>
+
                   </span>
                 </button>
 
                 <ul
                   className={`
-                    mt-2 space-y-2 overflow-hidden text-sm
-                    transition-all duration-200 ease-out
+                    mt-4 space-y-6 pl-6 overflow-hidden text-base
+                    transition-all duration-1000 ease-out font-medium
                     ${servicesOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"}
                   `}
                 >
@@ -294,7 +297,7 @@ export default function Navbar() {
                     <Link
                       href="/app-development/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       App Development
                     </Link>
@@ -303,7 +306,7 @@ export default function Navbar() {
                     <Link
                       href="/web-development/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Web Development
                     </Link>
@@ -312,7 +315,7 @@ export default function Navbar() {
                     <Link
                       href="/ux-ui-design/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       UX / UI Design
                     </Link>
@@ -321,7 +324,7 @@ export default function Navbar() {
                     <Link
                       href="/brand-identity-design/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Brand &amp; Identity
                     </Link>
@@ -330,7 +333,7 @@ export default function Navbar() {
                     <Link
                       href="/startup-development/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Startup Development
                     </Link>
@@ -339,7 +342,7 @@ export default function Navbar() {
                     <Link
                       href="/print-events-design/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Print &amp; Events Design
                     </Link>
@@ -348,7 +351,7 @@ export default function Navbar() {
                     <Link
                       href="/python-django/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Python / Django
                     </Link>
@@ -357,7 +360,7 @@ export default function Navbar() {
                     <Link
                       href="/shopify-hydrogen/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       Shopify / Hydrogen
                     </Link>
@@ -366,7 +369,7 @@ export default function Navbar() {
                     <Link
                       href="/aws-amazon-web-services/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       AWS Development
                     </Link>
@@ -375,7 +378,7 @@ export default function Navbar() {
                     <Link
                       href="/our-services/"
                       onClick={closeMenu}
-                      className="block py-1 text-slate-700"
+                      className="block py-1 "
                     >
                       + All Services
                     </Link>
