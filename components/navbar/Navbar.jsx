@@ -223,7 +223,7 @@ export default function Navbar() {
       {/* ============ MOBILE FULL-SCREEN MENU ============ */}
       <div
         className={`
-          fixed inset-0 z-50 bg-white/95 backdrop-blur
+          fixed inset-0 z-50 bg-white/95 backdrop-blur shadow-md transition-all duration-800
 
           ${menuOpen ? "transition-all duration-600 ease-out" : "opacity-0 pointer-events-none"}
           md:hidden
